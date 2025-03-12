@@ -4,14 +4,14 @@ Artem Dlusskij
 ==============
 
 *   [Contact](#contact)
-*   [About Me](#about)
+*   [About](#about)
 *   [Skills](#skills)
-*   [Code Example](#code)
+*   [Code](#code)
 *   [Projects](#projects)
 *   [Courses](#courses)
 *   [English](#english)
 
-Contact Information
+## Contact
 -------------------
 
 *   **Phone:**[+375 (29) 744-0146](tel:+375297440146)
@@ -19,12 +19,12 @@ Contact Information
 *   **Telegram:**[t.me/xexisss](https://t.me/xexisss)
 *   **GitHub:**[github.com/xexisss](https://github.com/xexisss)
 
-About Me
+## About
 --------
 
 2nd year student of the Belarusian-Russian University. I study on a fee-paying basis at the Faculty of Engineering and Economics, majoring in software engineering. I study various programming languages. I am looking for an internship as a backend developer.
 
-Skills
+## Skills
 ------
 
 *   **Programming Languages:** JavaScript, Java, С#
@@ -32,24 +32,24 @@ Skills
 *   **Version Control:** Git, GitHub
 *   **Testing:** Unit tests
 
-Code Example
+## Code
 ------------
 
                         `Console.WriteLine("Привет, мир!");  int number = 10; string message = "Число: " + number; Console.WriteLine(message);           if (number > 5) { Сonsole.WriteLine("Число больше 5!"); }`
                         
                     
 
-Projects
+## Projects
 --------
 
 1.  **Course work** - [Moodle](http://moodle.bru.by)
 
-Courses & Training
+## Courses
 ------------------
 
 *   Computer Academy STEP
 
-English Proficiency
+## English
 -------------------
 
 _My level of English is below intermediate (B1)_
