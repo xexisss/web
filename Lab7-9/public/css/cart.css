@@ -1,0 +1,133 @@
+body {
+    background: #eef7fc;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    margin: 0;
+    color: #333;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem 1rem 4rem;
+    background: #e3f4ff;
+  }
+  nav a {
+    margin-left: 2rem;
+    text-decoration: none;
+    color: #3a83d4;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  nav a:hover {
+    color: #2b6ca3;
+  }
+  .brand {
+    color: #53aaff;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    margin: 0;
+  }
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  h2 {
+    text-align: center;
+    color: #3a83d4;
+  }
+  #cart-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  .cart-card {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 16px #cbe4f9;
+    width: 270px;
+    padding: 1rem 1rem 2rem;
+    text-align: center;
+    position: relative;
+  }
+  .cart-card:hover {
+    box-shadow: 0 4px 24px #bbe8fe;
+  }
+  .service-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  .cart-card h3 {
+    margin: 0.4rem 0 0.1rem 0;
+    color: #3a83d4;
+  }
+  .cart-card p {
+    margin: 0.4rem 0;
+  }
+  .service-extra {
+    font-size: 0.98rem;
+    color: #2a576a;
+  }
+  .remove-cart {
+    background: #ee6363;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    padding: 0.32rem 1.1rem;
+    font-size: 0.96rem;
+    cursor: pointer;
+    transition: background .2s;
+    position: absolute;
+    right: 16px;
+    bottom: 14px;
+  }
+  .remove-cart:hover {
+    background: #a62828;
+  }
+  .count-block {
+    margin-top: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+  }
+  .count-btn {
+    background: #53aaff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.1em;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    transition: background .2s;
+  }
+  .count-btn:hover {
+    background: #2178c7;
+  }
+  input[type="number"].count-input {
+    width: 38px;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid #bbe8fe;
+    font-size: 1em;
+  }
+  #cart-summary {
+    margin: 2rem 0 0 0;
+    font-size: 1.3em;
+    text-align: center;
+    color: #1f6199;
+  }
+  #purchase-message {
+    margin-top: 1.3rem;
+    font-size: 1.13em;
+    text-align: center;
+    color: #359839;
+    font-weight: 500;
+  }
+  

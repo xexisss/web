@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Каталог услуг | HEALTCARE</title>
+    <link rel="stylesheet" href="css/catalog.css">
+    <link rel="stylesheet" href="css/preloader.css">
+</head>
+
+<body>
+    <div id="modal-bg" class="modal-bg">
+        <div class="modal-window" id="modal-window">
+          <button class="modal-close" id="modal-close-btn" aria-label="Закрыть">&times;</button>
+          <div id="modal-content"></div>
+        </div>
+    </div>
+      
+
+    <header>
+        <h1 class="brand">HEALTCARE</h1>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="#">О нас</a>
+            <a href="#">Статьи</a>
+            <a href="#">Услуги</a>
+            <a href="favorites-page.html">Избранное</a>
+            <a href="cart-page.html">Корзина</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Каталог врачей и услуг</h2>
+        <div class="catalog-actions">
+            <input type="text" id="searchBox" placeholder="Поиск по названию или описанию..." autocomplete="off" />
+            <select id="sortSelect">
+                <option value="">Сортировка</option>
+                <option value="price">По цене</option>
+                <option value="name">По названию</option>
+                <option value="rating">По рейтингу</option>
+            </select>
+            <div id="categoryList" class="categories"></div>
+        </div>
+        <div id="range-filters">
+            <label>Цена: от <input type="number" id="priceMin" min="0" style="width:60px;"> до <input type="number"
+                    id="priceMax" min="0" style="width:60px;"></label>
+        </div>
+        <div id="catalog-container"></div>
+        <div class="pagination" id="pagination"></div>
+    </main>
+    <div id="notif-box"></div>
+
+    <script src="js/catalog.js"></script>
+    <script src="js/preloader.js"></script>
+</body>
+
+</html>

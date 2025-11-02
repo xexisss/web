@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Админ-панель | HEALTCARE</title>
+  <link rel="stylesheet" href="css/admin.css" />
+  <link rel="stylesheet" href="css/preloader.css">
+</head>
+
+<body>
+  <header>
+    <h1 class="brand">HEALTCARE</h1>
+  </header>
+  <main id="admin-content" style="display:none;">
+    <h2>Админ-панель</h2>
+    <section>
+      <h3>Управление услугами</h3>
+      <form id="serviceForm" autocomplete="off">
+        <input type="hidden" id="service-id">
+        <div class="flex-form">
+          <input type="text" id="serv-name" placeholder="Название*" maxlength="40" required>
+          <input type="text" id="serv-description" placeholder="Описание*" maxlength="60" required>
+          <input type="text" id="serv-image" placeholder="Ссылка на фото*" maxlength="120" required>
+          <input type="text" id="serv-location" placeholder="Город*" maxlength="24" required>
+          <input type="number" step="0.1" id="serv-rating" placeholder="Рейтинг*" min="1" max="5" required>
+          <input type="number" id="serv-patients" placeholder="Пациентов*" min="0" required>
+          <input type="number" id="serv-price" placeholder="Цена*" min="0" required>
+          <input type="text" id="serv-category" placeholder="Категория*" maxlength="36" required>
+        </div>
+        <div class="error" id="service-err"></div>
+        <button type="submit" id="save-serv-btn" disabled>Добавить / Сохранить</button>
+        <button type="button" id="cancel-edit-btn" style="display:none;">Отмена</button>
+      </form>
+      <h4>Список услуг</h4>
+      <table id="services-table"></table>
+    </section>
+    <hr>
+    <section>
+      <h3>Отзывы на услуги</h3>
+      <label>Выберите услугу:
+        <select id="filter-service-reviews"></select>
+      </label>
+      <table id="reviews-table"></table>
+    </section>
+    <hr>
+    <section>
+      <h3>Отзывы пользователя</h3>
+      <label>Выберите никнейм:
+        <select id="filter-user-reviews"></select>
+      </label>
+      <table id="user-reviews-table"></table>
+    </section>
+  </main>
+  <div id="not-admin" style="display:none;padding:2em;text-align:center;font-size:1.2em;color:#d62323;">
+    Вам доступ запрещён. Войдите как администратор.
+  </div>
+  <script src="js/admin.js"></script>
+  <script src="js/preloader.js"></script>
+</body>
+
+</html>

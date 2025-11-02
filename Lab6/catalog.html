@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Каталог услуг | HEALTCARE</title>
+    <link rel="stylesheet" href="catalog.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="brand">HEALTCARE</h1>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="#">О нас</a>
+            <a href="#">Статьи</a>
+            <a href="#">Услуги</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Каталог врачей и услуг</h2>
+        <div id="catalog-controls" class="controls"></div>
+        <div class="catalog-actions">
+            <input type="text" id="searchBox" placeholder="Поиск по названию или описанию..." />
+            <select id="sortSelect">
+                <option value="">Сортировка</option>
+                <option value="price">По цене</option>
+                <option value="name">По названию</option>
+                <option value="rating">По рейтингу</option>
+            </select>
+            <div id="categoryList" class="categories"></div>
+        </div>
+
+        <div id="catalog-container"></div>
+    </main>
+    <script src="catalog.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+body {
+    background: #eef7fc;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    margin: 0;
+    color: #333;
+  }
+  header {
+    padding: 1.5rem 0 0.8rem 0;
+    background: #e3f4ff;
+    text-align: center;
+  }
+  .brand {
+    color: #53aaff;
+    letter-spacing: 2px;
+    font-size: 2.4rem;
+    margin: 0;
+  }
+  main {
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #fff;
+    margin-top: 2.5rem;
+    border-radius: 18px;
+    box-shadow: 0 2px 20px #aee2fa77;
+  }
+  h2 {
+    text-align: center;
+    color: #3a83d4;
+    margin-bottom: 1.7rem;
+  }
+  .form-group {
+    margin-bottom: 1.1rem;
+  }
+  label {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 0.2em;
+  }
+  input, select, textarea {
+    width: 100%;
+    padding: 0.45rem 0.6rem;
+    font-size: 1em;
+    border: 1px solid #bbe8fe;
+    border-radius: 8px;
+    margin-top: 0.18em;
+  }
+  textarea {
+    min-height: 66px;
+  }
+  button {
+    width: 100%;
+    background: #53aaff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.8rem;
+    font-size: 1.08em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    transition: background .2s;
+  }
+  button[disabled] {
+    background: #bddceb;
+    cursor: default;
+  }
+  .error {
+    color: #e4334b;
+    font-size: 0.97em;
+    min-height: 19px;
+    margin-top: 0.25em;
+  }
+  #feedback-success {
+    color: #378031;
+    text-align: center;
+    margin-top: 1em;
+    font-size: 1.09em;
+    min-height: 1.3em;
+  }
+  #product-reviews {
+    margin-top: 1.5em;
+  }
+  .review {
+    background: #f3fafd;
+    border-radius: 10px;
+    padding: 1em 1.2em;
+    margin-bottom: 1.1em;
+    box-shadow: 0 2px 8px #c7e6fa69;
+  }
+  .review .stars {
+    color: #e6b70a;
+    margin-bottom: .25em;
+  }
+  .review .author {
+    font-weight: 500;
+    color: #3489b5;
+    margin-bottom: .4em;
+  }
+  .review .date {
+    font-size: .93em;
+    color: #5a92a4;
+    float: right;
+  }
+  

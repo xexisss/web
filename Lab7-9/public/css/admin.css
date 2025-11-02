@@ -1,0 +1,124 @@
+body {
+    background: #eef7fc;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    margin: 0;
+    color: #333;
+}
+
+header {
+    padding: 1.2rem 0 1.5rem 0;
+    background: #e3f4ff;
+    text-align: center;
+}
+
+.brand {
+    color: #53aaff;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    margin: 0;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    background: #fff;
+    margin-top: 2.5rem;
+    border-radius: 18px;
+    box-shadow: 0 2px 20px #aee2fa4e;
+}
+
+h2,
+h3,
+h4 {
+    color: #3a83d4;
+}
+
+.flex-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    margin-bottom: 0.8em;
+}
+
+.flex-form input {
+    flex: 1 1 160px;
+    min-width: 150px;
+    padding: 0.45rem 0.65rem;
+    font-size: 1em;
+    border: 1px solid #bbe8fe;
+    border-radius: 7px;
+}
+
+button {
+    background: #53aaff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.48rem 1.2rem;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 0.5em;
+    transition: background .2s;
+}
+
+button[disabled] {
+    background: #bddceb;
+    cursor: default;
+}
+
+.error {
+    color: #e4334b;
+    font-size: 0.97em;
+    min-height: 19px;
+    margin-bottom: 0.3em;
+}
+
+table {
+    width: 100%;
+    background: #fafcfd;
+    margin-top: 1.1em;
+    border-collapse: collapse;
+    border-radius: 11px;
+    overflow: hidden;
+}
+
+table td,
+table th {
+    border: 1px solid #c1e5f6;
+    padding: 0.7em 0.5em;
+}
+
+table th {
+    background: #e2f3fe;
+    font-weight: bold;
+}
+
+.action-btn {
+    padding: 0.19em 0.65em;
+    font-size: 1em;
+    margin: 0 5px;
+    border-radius: 5px;
+    background: #fa8355;
+    color: #fff;
+    transition: background .2s;
+    border: none;
+    cursor: pointer;
+}
+
+.action-btn.delete {
+    background: #ec4747;
+}
+
+.action-btn.edit {
+    background: #67a7f7;
+}
+
+.action-btn:hover {
+    background: #c7462e;
+}
+
+.action-btn.edit:hover {
+    background: #236ab7;
+}

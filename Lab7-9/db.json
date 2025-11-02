@@ -1,0 +1,305 @@
+{
+  "services": [
+    {
+      "id": "1",
+      "name": "Терапевт",
+      "description": "Общая диагностика и лечение заболеваний.",
+      "image": "img/therapist.jpg",
+      "location": "Москва",
+      "rating": 4.8,
+      "patients": 1200,
+      "price": 2500,
+      "category": "Взрослый врач"
+    },
+    {
+      "id": "2",
+      "name": "Педиатр",
+      "description": "Лечение всех видов детских болезней.",
+      "image": "img/pediatrician.jpg",
+      "location": "Санкт-Петербург",
+      "rating": 4.9,
+      "patients": 950,
+      "price": 2000,
+      "category": "Детский врач"
+    },
+    {
+      "id": "3",
+      "name": "Кардиолог",
+      "description": "Профилактика и лечение сердечно-сосудистых заболеваний.",
+      "image": "img/cardiologist.jpg",
+      "location": "Казань",
+      "rating": 4.7,
+      "patients": 800,
+      "price": 3500,
+      "category": "Узкий специалист"
+    },
+    {
+      "id": "4",
+      "name": "Невролог",
+      "description": "Лечение неврологических расстройств.",
+      "image": "img/neurologist.jpg",
+      "location": "Екатеринбург",
+      "rating": 4.6,
+      "patients": 700,
+      "price": 3200,
+      "category": "Узкий специалист"
+    },
+    {
+      "id": "5",
+      "name": "Дерматолог",
+      "description": "Диагностика и лечение кожных заболеваний.",
+      "image": "img/dermatologist.jpg",
+      "location": "Самара",
+      "rating": 4.8,
+      "patients": 500,
+      "price": 3000,
+      "category": "Узкий специалист"
+    },
+    {
+      "id": "6",
+      "name": "Офтальмолог",
+      "description": "Консультация и лечение глазных болезней.",
+      "image": "img/ophthalmologist.jpg",
+      "location": "Нижний Новгород",
+      "rating": 4.7,
+      "patients": 680,
+      "price": 3100,
+      "category": "Узкий специалист"
+    },
+    {
+      "id": "7",
+      "name": "ЛОР",
+      "description": "Диагностика и лечение заболеваний уха, горла и носа.",
+      "image": "img/otolaryngologist.jpg",
+      "location": "Челябинск",
+      "rating": 4.5,
+      "patients": 400,
+      "price": 2700,
+      "category": "Узкий специалист"
+    },
+    {
+      "id": "8",
+      "name": "Гинеколог",
+      "description": "Женское здоровье и профилактика.",
+      "image": "img/gynecologist.jpg",
+      "location": "Красноярск",
+      "rating": 4.9,
+      "patients": 600,
+      "price": 3300,
+      "category": "Женское здоровье"
+    },
+    {
+      "id": "9",
+      "name": "УЗИ специалист",
+      "description": "Проведение ультразвуковых исследований всех органов.",
+      "image": "img/ultrasound.jpg",
+      "location": "Пермь",
+      "rating": 4.8,
+      "patients": 1100,
+      "price": 1500,
+      "category": "Диагностика"
+    },
+    {
+      "id": "10",
+      "name": "Стоматолог",
+      "description": "Диагностика и лечение заболеваний полости рта.",
+      "image": "img/dentist.jpg",
+      "location": "Воронеж",
+      "rating": 4.9,
+      "patients": 940,
+      "price": 3700,
+      "category": "Взрослый врач"
+    },
+    {
+      "id": "11",
+      "name": "Психотерапевт",
+      "description": "Психологическая поддержка и консультации.",
+      "image": "img/psychotherapist.jpg",
+      "location": "Ростов-на-Дону",
+      "rating": 4.7,
+      "patients": 540,
+      "price": 3500,
+      "category": "Психотерапия"
+    },
+    {
+      "id": "12",
+      "name": "Онколог",
+      "description": "Консультации по онкологическим вопросам.",
+      "image": "img/oncologist.jpg",
+      "location": "Уфа",
+      "rating": 4.6,
+      "patients": 310,
+      "price": 5000,
+      "category": "Узкий специалист"
+    },
+    {
+      "id": "13",
+      "name": "Гастроэнтеролог",
+      "description": "Диагностика желудочно-кишечных заболеваний.",
+      "image": "img/gastroenterologist.jpg",
+      "location": "Омск",
+      "rating": 4.7,
+      "patients": 470,
+      "price": 2800,
+      "category": "Узкий специалист"
+    },
+    {
+      "id": "14",
+      "name": "Травматолог",
+      "description": "Лечение травм и повреждений.",
+      "image": "img/traumatologist.jpg",
+      "location": "Волгоград",
+      "rating": 4.5,
+      "patients": 360,
+      "price": 3900,
+      "category": "Узкий специалист"
+    },
+    {
+      "id": "15",
+      "name": "Эндокринолог",
+      "description": "Диагностика и лечение эндокринных нарушений.",
+      "image": "img/endocrinologist.jpg",
+      "location": "Краснодар",
+      "rating": 4.8,
+      "patients": 410,
+      "price": 3400,
+      "category": "Узкий специалист"
+    }
+  ],
+  "favorites": [],
+  "cart": [
+    {
+      "id": "1",
+      "name": "Терапевт",
+      "description": "Общая диагностика и лечение заболеваний.",
+      "image": "img/therapist.jpg",
+      "location": "Москва",
+      "rating": 4.8,
+      "patients": 1200,
+      "price": 2500,
+      "category": "Взрослый врач",
+      "count": 1
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "phone": "+375291234567",
+      "email": "user@mail.by",
+      "birthdate": "2000-02-10",
+      "role": "покупатель",
+      "fio": {
+        "first": "Иван",
+        "last": "Петров",
+        "middle": "Сергеевич"
+      },
+      "nickname": "IvaPet123",
+      "password": "$2b$10$fakehash12345",
+      "agreementAccepted": true
+    },
+    {
+      "id": "2",
+      "phone": "+375331112233",
+      "email": "admin@mail.by",
+      "birthdate": "1987-05-21",
+      "role": "администратор",
+      "fio": {
+        "first": "Ольга",
+        "last": "Васильева",
+        "middle": ""
+      },
+      "nickname": "OlgVas234",
+      "password": "$2b$10$fakehash12345",
+      "agreementAccepted": true
+    },
+    {
+      "id": "8e1e",
+      "phone": "+375255555555",
+      "email": "dasdas@dsad.com",
+      "birthdate": "2002-02-10",
+      "role": "покупатель",
+      "fio": {
+        "first": "Olya",
+        "last": "Jija",
+        "middle": "Ogo"
+      },
+      "nickname": "OlyJij660_sx",
+      "password": "12345AbK3&",
+      "agreementAccepted": true
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "userId": 1,
+      "orderDate": "2025-11-02T14:00:00",
+      "items": [
+        {
+          "serviceId": 3,
+          "name": "Кардиолог",
+          "count": 1,
+          "price": 3500
+        },
+        {
+          "serviceId": 2,
+          "name": "Педиатр",
+          "count": 2,
+          "price": 2000
+        }
+      ],
+      "total": 7500
+    },
+    {
+      "id": "adac",
+      "userId": 1,
+      "orderDate": "2025-11-02T16:26:34.348Z",
+      "items": [
+        {
+          "serviceId": "1",
+          "name": "Терапевт",
+          "count": 1,
+          "price": 2500
+        }
+      ],
+      "total": 2500
+    },
+    {
+      "id": "31d0",
+      "userId": 1,
+      "orderDate": "2025-11-02T16:27:12.618Z",
+      "items": [
+        {
+          "serviceId": "1",
+          "name": "Терапевт",
+          "count": 1,
+          "price": 2500
+        }
+      ],
+      "total": 2500
+    },
+    {
+      "id": "5b82",
+      "userId": "8e1e",
+      "orderDate": "2025-11-02T16:46:43.761Z",
+      "items": [
+        {
+          "serviceId": "2",
+          "name": "Педиатр",
+          "count": 1,
+          "price": 2000
+        }
+      ],
+      "total": 2000
+    }
+  ],
+  "feedback": [
+    {
+      "id": "1",
+      "userId": 1,
+      "serviceId": 2,
+      "rating": 5,
+      "text": "Очень понравился приём, специалист очень внимательный.",
+      "date": "2025-11-02T16:20:00"
+    }
+  ]
+}

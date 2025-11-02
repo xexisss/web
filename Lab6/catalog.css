@@ -1,0 +1,172 @@
+body {
+    background: #eef7fc;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    margin: 0;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem 1rem 4rem;
+    background: #e3f4ff;
+}
+
+nav a {
+    margin-left: 2rem;
+    text-decoration: none;
+    color: #3a83d4;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #2b6ca3;
+}
+
+.brand {
+    color: #53aaff;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    margin: 0;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h2 {
+    text-align: center;
+    color: #3a83d4;
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.controls button {
+    background: #53aaff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.controls button:hover {
+    background: #2178c7;
+}
+
+.catalog-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    align-items: center;
+}
+
+.catalog-actions input {
+    padding: 0.5rem 1rem;
+    border: 1px solid #bbe8fe;
+    border-radius: 7px;
+    font-size: 1rem;
+    min-width: 240px;
+    outline: none;
+}
+
+.catalog-actions select {
+    padding: 0.52rem 0.9rem;
+    border: 1px solid #bbe8fe;
+    border-radius: 7px;
+    font-size: 1rem;
+    background: #f7fbff;
+    color: #2178c7;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+}
+
+.categories label {
+    padding: 0.4rem 0.95rem;
+    background: #e3f4ff;
+    border-radius: 16px;
+    font-size: 0.98rem;
+    cursor: pointer;
+    color: #287ad3;
+    user-select: none;
+}
+
+.categories input[type="checkbox"] {
+    margin-right: 0.4em;
+}
+
+
+
+#catalog-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.service-card {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 16px #cbe4f9;
+    width: 270px;
+    padding: 1rem 1rem 2rem;
+    text-align: center;
+    transition: box-shadow 0.2s;
+}
+
+.service-card:hover {
+    box-shadow: 0 4px 24px #bbe8fe;
+}
+
+.service-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #f4fafe;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.service-card h3 {
+    margin: 0.4rem 0 0.2rem 0;
+    color: #3a83d4;
+}
+
+.service-card p {
+    margin: 0.4rem 0;
+}
+
+.service-info {
+    font-size: 0.96rem;
+    color: #444;
+}
+
+.service-extra {
+    margin-top: 0.7rem;
+    font-size: 0.94rem;
+    color: #2a576a;
+}
+
+.service-rating,
+.service-patients {
+    margin-left: 0.5rem;
+}

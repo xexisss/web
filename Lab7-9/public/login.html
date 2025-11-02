@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Вход | HEALTCARE</title>
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/preloader.css">
+</head>
+<body>
+  <header>
+    <h1 class="brand">HEALTCARE</h1>
+  </header>
+  <main>
+    <h2>Вход в личный кабинет</h2>
+    <form id="loginForm" autocomplete="off" novalidate>
+      <div class="form-group">
+        <label>Email или телефон*:
+          <input type="text" id="login" maxlength="40">
+        </label>
+        <div class="error" id="login-error"></div>
+      </div>
+      <div class="form-group">
+        <label>Пароль*:
+          <input type="password" id="login-password" maxlength="20">
+        </label>
+        <div class="error" id="login-password-error"></div>
+      </div>
+      <button type="submit" id="loginBtn" disabled>Войти</button>
+      <div id="login-success"></div>
+    </form>
+    <p style="text-align:center;margin-top:1.7em;">
+      Нет аккаунта? <a href="register.html">Зарегистрироваться</a>
+    </p>
+  </main>
+  <script src="js/login.js"></script>
+  <script src="js/preloader.js"></script>
+</body>
+</html>

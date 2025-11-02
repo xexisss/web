@@ -1,0 +1,25 @@
+#preloader {
+    position: fixed;
+    inset: 0;
+    background: #eef7fc;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s;
+}
+
+.spinner {
+    border: 7px solid #a5eaff;
+    border-top: 7px solid #009fb7;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    animation: spin .9s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}

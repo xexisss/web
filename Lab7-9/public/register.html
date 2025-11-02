@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Регистрация | HEALTCARE</title>
+  <link rel="stylesheet" href="css/register.css">
+  <link rel="stylesheet" href="css/preloader.css">
+</head>
+
+<body>
+  <header>
+    <h1 class="brand">HEALTCARE</h1>
+  </header>
+  <main>
+    <h2>Регистрация нового пользователя</h2>
+    <form id="registerForm" autocomplete="off" novalidate>
+      <div class="form-group">
+        <label>Номер телефона*:
+          <input type="text" id="phone" placeholder="+375XXXXXXXXX" maxlength="13">
+        </label>
+        <div class="error" id="phone-error"></div>
+      </div>
+
+      <div class="form-group">
+        <label>Email*:
+          <input type="email" id="email" maxlength="40">
+        </label>
+        <div class="error" id="email-error"></div>
+      </div>
+
+      <div class="form-group">
+        <label>Дата рождения*:
+          <input type="date" id="birthdate">
+        </label>
+        <div class="error" id="birthdate-error"></div>
+      </div>
+
+      <div class="form-group">
+        <label>Фамилия*:
+          <input type="text" id="lastName" maxlength="40">
+        </label>
+        <div class="error" id="lastName-error"></div>
+      </div>
+      <div class="form-group">
+        <label>Имя*:
+          <input type="text" id="firstName" maxlength="30">
+        </label>
+        <div class="error" id="firstName-error"></div>
+      </div>
+      <div class="form-group">
+        <label>Отчество:
+          <input type="text" id="middleName" maxlength="30">
+        </label>
+        <div class="error" id="middleName-error"></div>
+      </div>
+
+      <div class="form-group">
+        <label>Как задать пароль?*</label>
+        <select id="passwordMode">
+          <option value="self">Ввести самостоятельно</option>
+          <option value="auto">Сгенерировать автоматически</option>
+        </select>
+      </div>
+      <div class="form-group" id="manualPassword-group">
+        <label>Пароль*:
+          <input type="password" id="password" maxlength="20">
+        </label>
+        <div class="error" id="password-error"></div>
+      </div>
+      <div class="form-group" id="confirmPassword-group">
+        <label>Повторите пароль*:
+          <input type="password" id="confirmPassword" maxlength="20" autocomplete="new-password">
+        </label>
+        <div class="error" id="confirmPassword-error"></div>
+      </div>
+      <div class="form-group" id="autoPassword-group" style="display:none;">
+        <label>Ваш пароль:
+          <input type="text" id="autoPassword" readonly>
+        </label>
+        <button type="button" id="generatePasswordBtn">Сгенерировать ещё</button>
+      </div>
+
+      <div class="form-group">
+        <label>Никнейм*:
+          <input type="text" id="nickname" maxlength="24" readonly>
+          <button type="button" id="genNickBtn">Сгенерировать ещё</button>
+        </label>
+        <div class="error" id="nickname-error"></div>
+      </div>
+
+      <div class="form-group agreement-group">
+        <input type="checkbox" id="agreement">
+        <label for="agreement" style="display:inline;">Я ознакомлен(а) с <a href="#">пользовательским
+            соглашением</a>*</label>
+        <div class="error" id="agreement-error"></div>
+      </div>
+
+      <button type="submit" id="registerBtn" disabled>Зарегистрироваться</button>
+      <div id="register-success"></div>
+    </form>
+  </main>
+  <script src="js/register.js"></script>
+  <script src="js/preloader.js"></script>
+</body>
+
+</html>
