@@ -7,6 +7,7 @@
   <title>Healthcare - Medical Services</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/preloader.css">
+  <link rel="icon" type="image/png" href="img/burger.png">
 </head>
 
 <body>
@@ -18,7 +19,7 @@
   <nav id="sidebar-menu">
     <ul>
       <li><a href="login.html" class="nav-link active">Login</a></li>
-      <li><a href="favorites-page.html" class="nav-link">Favorites</a></li>
+      <li><a href="#doctors" class="nav-link">Doctors</a></li>
       <li><a href="feedback.html" class="nav-link">Feedback</a></li>
       <li><a href="catalog.html" class="nav-link">Services</a></li>
       <li>
@@ -37,7 +38,7 @@
               <nav class="main-navigation" role="navigation" aria-label="Main navigation">
                 <ul class="nav-list">
                   <li><a href="login.html" class="nav-link active">Login</a></li>
-                  <li><a href="favorites-page.html" class="nav-link">Favorites</a></li>
+                  <li><a href="#doctors" class="nav-link">Doctors</a></li>
                   <li><a href="feedback.html" class="nav-link">Feedback</a></li>
                   <li><a href="catalog.html" class="nav-link">Services</a></li>
                   <li>
@@ -160,7 +161,7 @@
           </div>
         </section>
 
-        <section class="quality-service-section" aria-labelledby="quality-heading">
+        <section class="quality-service-section scroll-section" aria-labelledby="quality-heading">
           <div class="quality-container">
             <div class="quality-image-wrapper">
               <img src="img/Dr_Khalid.png" alt="Quality service illustration" class="quality-image" />
@@ -234,7 +235,7 @@
           </div>
         </section>
 
-        <section class="services-section" aria-labelledby="services-heading">
+        <section class="services-section scroll-section" aria-labelledby="services-heading" id="services">
           <div class="our-service">
             <div class="text-wrapper">Our Service</div>
             <p class="div">
@@ -285,7 +286,7 @@
           </div>
         </section>
 
-        <section class="doctors-section" aria-labelledby="doctors-heading">
+        <section class="doctors-section scroll-section" aria-labelledby="doctors-heading">
           <h2 id="doctors-heading" class="section-title">
             Meet Our Certified Online Doctors
           </h2>
@@ -294,7 +295,7 @@
             98% satisfaction rating, they really set us apart!
           </p>
 
-          <div class="doctors-grid">
+          <div class="doctors-grid" id="doctors">
             <article class="doctor-card">
               <img src="img/doctor1.png" alt="Dr Amanda Linda" class="doctor-photo" />
               <h3 class="doctor-name">Dr Amanda Linda</h3>
@@ -331,7 +332,7 @@
           </div>
         </section>
 
-        <section class="mobile-app-section" aria-labelledby="mobile-app-heading">
+        <section class="mobile-app-section scroll-section" aria-labelledby="mobile-app-heading">
           <div class="mobile-app-container">
             <div class="mobile-app-image-wrapper">
               <img src="img/mobile_app.png" alt="Mobile app preview" class="mobile-app-image" />
@@ -418,6 +419,31 @@
       <div style="position:relative;overflow:hidden;"><a href="https://yandex.by/maps/org/belorussko_rossiyskiy_universitet/1128267917/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Белорусско-Российский университет</a><a href="https://yandex.by/maps/158/mogilev/category/university/184106140/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">ВУЗ в Могилёве</a><a href="https://yandex.by/maps/158/mogilev/category/foreign_language_courses/184106160/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Курсы иностранных языков в Могилёве</a><iframe src="https://yandex.by/map-widget/v1/org/belorussko_rossiyskiy_universitet/1128267917/?indoorLevel=1&ll=30.344031%2C53.907949&z=17" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
     </section>
 
+    <div class="gallery-container">
+      <div id="media-player">
+        <div class="gallery-image-wrap">
+          <img id="gallery-img" src="img/gallery1.jpg" alt="Галерея" />
+          <button id="gallery-video-btn" style="display:none;">▶ Смотреть видео</button>
+        </div>
+        <div class="gallery-controls">
+          <button class="gallery-btn" id="gallery-prev">←</button>
+          <button class="gallery-btn" id="gallery-random">🎲</button>
+          <button class="gallery-btn" id="gallery-next">→</button>
+        </div>
+        <div class="volume-block">
+          <label style="font-size:0.96em;color:#267;">Громкость: <input type="range" id="gallery-volume" min="0" max="1" step="0.01" value="0.6"></label>
+          <span id="audio-state" title="Воспроизведение" style="margin-left:14px;font-size:1.3em;vertical-align:middle;">🔊</span>
+        </div>
+      </div>
+    </div>
+    
+    <div id="modal-video-bg" class="modal-bg" style="display:none;">
+      <div class="modal-window" style="padding:0;max-width:720px;">
+        <button class="modal-close" id="modal-video-close" aria-label="Закрыть">&times;</button>
+        <video id="gallery-video" controls style="width:100%;max-height:68vh;" poster="img/gallery7.jpg"></video>
+      </div>
+    </div>
+    
 
     <footer class="footer-section">
       <div class="footer-container">
@@ -496,6 +522,20 @@
   <script src="js/preloader.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/burger.js"></script>
+  <script src="js/galery.js"></script>
+  <script>
+    function onScrollAnimateSections() {
+  document.querySelectorAll('.scroll-section').forEach(section => {
+    const rect = section.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 80) {
+      section.classList.add('visible');
+    }
+  });
+}
+window.addEventListener('scroll', onScrollAnimateSections);
+window.addEventListener('DOMContentLoaded', onScrollAnimateSections);
+
+  </script>
 </body>
 
 </html>
