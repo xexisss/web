@@ -17,15 +17,16 @@
   <div id="burger-overlay"></div>
   <div id="burger-btn" class="burger"><span></span><span></span><span></span></div>
   <nav id="sidebar-menu">
-    <ul>
-      <li><a href="login.html" class="nav-link active">Login</a></li>
-      <li><a href="#doctors" class="nav-link">Doctors</a></li>
-      <li><a href="feedback.html" class="nav-link">Feedback</a></li>
-      <li><a href="catalog.html" class="nav-link">Services</a></li>
+    <ul class="nav-menu">
+      <li><a href="login.html" class="nav-link active" data-i18n="header.login">Login</a></li>
+      <li><a href="#doctors" class="nav-link" data-i18n="header.doctors">Doctors</a></li>
+      <li><a href="feedback.html" class="nav-link" data-i18n="feedback">Feedback</a></li>
+      <li><a href="catalog.html" class="nav-link" data-i18n="services">Services</a></li>
       <li>
-        <a href="register.html" class="nav-link cta-button">Get Started</a>
+        <a href="register.html" class="nav-link cta-button" data-i18n="get-started">Get Started</a>
       </li>
     </ul>
+
   </nav>
 
   <div class="page-container">
@@ -37,13 +38,18 @@
               <h1 class="logo">HEALTCARE</h1>
               <nav class="main-navigation" role="navigation" aria-label="Main navigation">
                 <ul class="nav-list">
-                  <li><a href="login.html" class="nav-link active">Login</a></li>
-                  <li><a href="#doctors" class="nav-link">Doctors</a></li>
-                  <li><a href="feedback.html" class="nav-link">Feedback</a></li>
-                  <li><a href="catalog.html" class="nav-link">Services</a></li>
+                  <li><a href="login.html" class="nav-link active" data-i18n="header.login">Login</a></li>
+                  <li><a href="#doctors" class="nav-link" data-i18n="header.doctors">Doctors</a></li>
+                  <li><a href="feedback.html" class="nav-link" data-i18n="header.feedback">Feedback</a></li>
+                  <li><a href="catalog.html" class="nav-link" data-i18n="header.services">Services</a></li>
                   <li>
-                    <a href="register.html" class="nav-link cta-button">Get Started</a>
+                    <a href="register.html" class="nav-link cta-button" data-i18n="header.get-started">Get Started</a>
                   </li>
+                  <button class="header_btn header_btn--eng" id="langToggle" data-lang="ru"></button>
+                  <button id="logout-btn" class="logout-btn" style="display:none;"
+                    data-i18n="header.logout">Выйти</button>
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Переключить тему">🌙</button>
+
                 </ul>
                 <img src="img/burger.png" alt="" class="burger">
               </nav>
@@ -52,18 +58,18 @@
             <section class="hero">
               <div class="container hero-inner">
                 <div class="hero-text">
-                  <h1>Find And Search Your <span>Suitable Doctor’s</span></h1>
-                  <p>
-                    Just care and cure yourself and your family with health
-                    care’s best doctors anytime.
+                  <h1 data-i18n="hero.title">Find And Search Your <span>Suitable Doctor’s</span></h1>
+                  <p data-i18n="hero.subtitle">
+                    Just care and cure yourself and your family with health care’s best doctors anytime.
                   </p>
                   <div class="search-box">
                     <div class="box">
                       <div class="search-cta">
                         <div class="rectangle"></div>
                         <div class="div"></div>
-                        <div class="text-wrapper">Find your doctor</div>
+                        <div class="text-wrapper" data-i18n="hero.find-doctor">Find your doctor</div>
                         <div class="rectangle-2"></div>
+
                         <div class="icon">
                           <div class="location">
                             <svg width="15" height="18" viewBox="0 0 15 18" fill="none"
@@ -84,7 +90,7 @@
                               stroke-linecap="round" stroke-linejoin="round" />
                           </svg>
                         </div>
-                        <div class="text-wrapper-2">New York, USA</div>
+                        <div class="text-wrapper-2" data-i18n="hero.location">New York, USA</div>
                         <div class="rectangle-3"></div>
                         <div class="search-button">
                           <div class="search">
@@ -115,132 +121,103 @@
 
       <div class="content-wrapper">
         <section class="steps-section" aria-labelledby="steps-heading">
-          <h2 id="steps-heading" class="section-title">
+          <h2 id="steps-heading" class="section-title" data-i18n="steps.title">
             3 Easy Steps and Get Your Solution
           </h2>
-
           <div class="steps-container">
             <div class="steps-grid">
               <article class="step-card">
                 <div class="step-content">
                   <div class="step-header">
                     <img src="img/search.png" alt="Find doctors icon" class="step-icon" />
-                    <h3 class="step-title">Find best doctor's</h3>
+                    <h3 class="step-title" data-i18n="steps.find.title">Find best doctor's</h3>
                   </div>
-                  <p class="step-description">
-                    Find your doctor easily with a minimum of effort. We've
-                    kept everything organised for you.
+                  <p class="step-description" data-i18n="steps.find.desc">
+                    Find your doctor easily with a minimum of effort. We've kept everything organised for you.
                   </p>
                 </div>
               </article>
-
               <article class="step-card">
                 <div class="step-content">
                   <img src="img/calendar.png" alt="Get appointment icon" class="step-icon" />
-                  <h3 class="step-title">Get Appointment</h3>
-                  <p class="step-description">
-                    Ask for an appointment of the doctor quickly with almost a
-                    single click. We take care of the rest.
+                  <h3 class="step-title" data-i18n="steps.appointment.title">Get Appointment</h3>
+                  <p class="step-description" data-i18n="steps.appointment.desc">
+                    Ask for an appointment of the doctor quickly with almost a single click. We take care of the rest.
                   </p>
                 </div>
               </article>
-
               <article class="step-card">
                 <div class="step-content">
                   <div class="step-header">
                     <img src="img/phone.png" alt="Happy consultations icon" class="step-icon" />
-                    <h3 class="step-title">Happy Consultations</h3>
+                    <h3 class="step-title" data-i18n="steps.consult.title">Happy Consultations</h3>
                   </div>
-                  <p class="step-description">
-                    Do consultations and take the service based on your
-                    appointment. Get back to good health
+                  <p class="step-description" data-i18n="steps.consult.desc">
+                    Do consultations and take the service based on your appointment. Get back to good health
                   </p>
                 </div>
               </article>
             </div>
           </div>
         </section>
+
 
         <section class="quality-service-section scroll-section" aria-labelledby="quality-heading">
           <div class="quality-container">
             <div class="quality-image-wrapper">
               <img src="img/Dr_Khalid.png" alt="Quality service illustration" class="quality-image" />
             </div>
-
             <div class="quality-content">
-              <h2 id="quality-heading" class="quality-title">
+              <h2 id="quality-heading" class="quality-title" data-i18n="quality.title">
                 Best quality service with our experience doctors
               </h2>
-              <p class="quality-description">
+              <p class="quality-description" data-i18n="quality.desc">
                 With our top doctors, we are able to provide best medical
-                services above average We have highly experienced doctors, so
-                don't worry They are also very talented in their fields
+                services above average. We have highly experienced doctors, so
+                don't worry. They are also very talented in their fields
               </p>
-
               <div class="features-list">
                 <div class="feature-item">
                   <div class="feature-icons">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"
-                      class="feature-icon">
-                      <path
-                        d="M9 0.25C4.16797 0.25 0.25 4.16797 0.25 9C0.25 13.832 4.16797 17.75 9 17.75C13.832 17.75 17.75 13.832 17.75 9C17.75 4.16797 13.832 0.25 9 0.25ZM12.7793 6.14258L8.66602 11.8457C8.60853 11.9259 8.53274 11.9913 8.44493 12.0364C8.35713 12.0815 8.25984 12.1051 8.16113 12.1051C8.06242 12.1051 7.96513 12.0815 7.87733 12.0364C7.78953 11.9913 7.71374 11.9259 7.65625 11.8457L5.2207 8.4707C5.14648 8.36719 5.2207 8.22266 5.34766 8.22266H6.26367C6.46289 8.22266 6.65234 8.31836 6.76953 8.48242L8.16016 10.4121L11.2305 6.1543C11.3477 5.99219 11.5352 5.89453 11.7363 5.89453H12.6523C12.7793 5.89453 12.8535 6.03906 12.7793 6.14258Z"
-                        fill="#40A3F8" />
-                    </svg>
+                    <!-- SVG -->
                   </div>
                   <div class="feature-text">
-                    <p class="feature-title">
+                    <p class="feature-title" data-i18n="quality.feature1">
                       Search your specialist & Online consultations anywhere
                     </p>
                   </div>
                 </div>
-
                 <div class="feature-item">
                   <div class="feature-icons">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"
-                      class="feature-icon">
-                      <path
-                        d="M9 0.25C4.16797 0.25 0.25 4.16797 0.25 9C0.25 13.832 4.16797 17.75 9 17.75C13.832 17.75 17.75 13.832 17.75 9C17.75 4.16797 13.832 0.25 9 0.25ZM12.7793 6.14258L8.66602 11.8457C8.60853 11.9259 8.53274 11.9913 8.44493 12.0364C8.35713 12.0815 8.25984 12.1051 8.16113 12.1051C8.06242 12.1051 7.96513 12.0815 7.87733 12.0364C7.78953 11.9913 7.71374 11.9259 7.65625 11.8457L5.2207 8.4707C5.14648 8.36719 5.2207 8.22266 5.34766 8.22266H6.26367C6.46289 8.22266 6.65234 8.31836 6.76953 8.48242L8.16016 10.4121L11.2305 6.1543C11.3477 5.99219 11.5352 5.89453 11.7363 5.89453H12.6523C12.7793 5.89453 12.8535 6.03906 12.7793 6.14258Z"
-                        fill="#40A3F8" />
-                    </svg>
+                    <!-- SVG -->
                   </div>
                   <div class="feature-text">
-                    <p class="feature-title">
+                    <p class="feature-title" data-i18n="quality.feature2">
                       Consultation our top specialists
                     </p>
                   </div>
                 </div>
-
                 <div class="feature-item">
-                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"
-                    class="feature-icon">
-                    <path
-                      d="M9 0.25C4.16797 0.25 0.25 4.16797 0.25 9C0.25 13.832 4.16797 17.75 9 17.75C13.832 17.75 17.75 13.832 17.75 9C17.75 4.16797 13.832 0.25 9 0.25ZM12.7793 6.14258L8.66602 11.8457C8.60853 11.9259 8.53274 11.9913 8.44493 12.0364C8.35713 12.0815 8.25984 12.1051 8.16113 12.1051C8.06242 12.1051 7.96513 12.0815 7.87733 12.0364C7.78953 11.9913 7.71374 11.9259 7.65625 11.8457L5.2207 8.4707C5.14648 8.36719 5.2207 8.22266 5.34766 8.22266H6.26367C6.46289 8.22266 6.65234 8.31836 6.76953 8.48242L8.16016 10.4121L11.2305 6.1543C11.3477 5.99219 11.5352 5.89453 11.7363 5.89453H12.6523C12.7793 5.89453 12.8535 6.03906 12.7793 6.14258Z"
-                      fill="#40A3F8" />
+                  <svg width="18" height="18" ... class="feature-icon">
+                    <!-- SVG path... -->
                   </svg>
-                  <p class="feature-title">Doctors are available 24/7</p>
+                  <p class="feature-title" data-i18n="quality.feature3">Doctors are available 24/7</p>
                 </div>
-
                 <button class="explore-button" type="button">
-                  <span>Explore specialists</span>
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-                    class="button-icon">
-                    <path d="M10 12.25H22.0001" stroke="white" stroke-width="1.5" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                    <path d="M16.75 7L22 12.25L16.75 17.5001" stroke="white" stroke-width="1.5" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg>
+                  <span data-i18n="quality.explore">Explore specialists</span>
+                  <!-- SVG ... -->
                 </button>
               </div>
             </div>
           </div>
         </section>
 
+
         <section class="services-section scroll-section" aria-labelledby="services-heading" id="services">
           <div class="our-service">
-            <div class="text-wrapper">Our Service</div>
-            <p class="div">
-              Our doctors have high qualified skills and are guaranteed to
-              help you recover from your disease.
+            <div class="text-wrapper" data-i18n="services.title">Our Service</div>
+            <p class="div" data-i18n="services.desc">
+              Our doctors have high qualified skills and are guaranteed to help you recover from your disease.
             </p>
             <div class="branches">
               <div class="cardiology">
@@ -248,13 +225,13 @@
                 <div class="group">
                   <img class="icon" src="img/heart.png" />
                 </div>
-                <div class="text-wrapper-2">Cardiology</div>
+                <div class="text-wrapper-2" data-i18n="services.cardiology.title">Cardiology</div>
                 <div class="flexcontainer">
-                  <p class="text">
-                    <span class="span">Our cardiologists are skilled at&nbsp;&nbsp;the
-                      diagnosing and treating diseases</span>
+                  <p class="text" data-i18n="services.cardiology.desc1">
+                    <span class="span">Our cardiologists are skilled at&nbsp;&nbsp;the diagnosing and treating
+                      diseases</span>
                   </p>
-                  <p class="text">
+                  <p class="text" data-i18n="services.cardiology.desc2">
                     <span class="span">of the cardiovascular system.</span>
                   </p>
                 </div>
@@ -263,11 +240,10 @@
                 <div class="shape">
                   <div class="rectangle-2"></div>
                 </div>
-                <div class="text-wrapper-3">Pulmonology</div>
+                <div class="text-wrapper-3" data-i18n="services.pulmonology.title">Pulmonology</div>
                 <img class="icon" src="img/lungs.png" />
-                <p class="p">
-                  Our Pulmonologist are skilled at&nbsp;&nbsp;diagnosing
-                  treating diseases of the Pulmonology system.
+                <p class="p" data-i18n="services.pulmonology.desc">
+                  Our Pulmonologist are skilled at&nbsp;&nbsp;diagnosing treating diseases of the Pulmonology system.
                 </p>
               </div>
               <div class="medicine">
@@ -275,10 +251,10 @@
                 <div class="group-2">
                   <img class="icon" src="img/pill.png" />
                 </div>
-                <div class="text-wrapper-4">Medicine</div>
-                <p class="p">
-                  Our medcine doctor are skilled at&nbsp;&nbsp;diagnosing
-                  treating diseases of the&nbsp;&nbsp;latest medicne system.
+                <div class="text-wrapper-4" data-i18n="services.medicine.title">Medicine</div>
+                <p class="p" data-i18n="services.medicine.desc">
+                  Our medcine doctor are skilled at&nbsp;&nbsp;diagnosing treating diseases of the&nbsp;&nbsp;latest
+                  medicne system.
                 </p>
               </div>
             </div>
@@ -286,84 +262,79 @@
           </div>
         </section>
 
+
         <section class="doctors-section scroll-section" aria-labelledby="doctors-heading">
-          <h2 id="doctors-heading" class="section-title">
+          <h2 id="doctors-heading" class="section-title" data-i18n="doctors.title">
             Meet Our Certified Online Doctors
           </h2>
-          <p class="doctors-description">
-            Our online doctors have an average of 15 years experience and a
-            98% satisfaction rating, they really set us apart!
+          <p class="doctors-description" data-i18n="doctors.desc">
+            Our online doctors have an average of 15 years experience and a 98% satisfaction rating, they really set us
+            apart!
           </p>
-
           <div class="doctors-grid" id="doctors">
             <article class="doctor-card">
               <img src="img/doctor1.png" alt="Dr Amanda Linda" class="doctor-photo" />
-              <h3 class="doctor-name">Dr Amanda Linda</h3>
-              <p class="doctor-specialty">Dentist Specilist</p>
+              <h3 class="doctor-name" data-i18n="doctors.list.0.name">Dr Amanda Linda</h3>
+              <p class="doctor-specialty" data-i18n="doctors.list.0.spec">Dentist Specialist</p>
               <img src="img/Social-Icons.svg" alt="Rating stars" class="doctor-rating" />
             </article>
-
             <article class="doctor-card">
               <img src="img/doctor2.png" alt="Dr. Alisa Rahman" class="doctor-photo" />
-              <h3 class="doctor-name">Dr. Alisa Rahman</h3>
-              <p class="doctor-specialty">Carddiologist Specilist</p>
+              <h3 class="doctor-name" data-i18n="doctors.list.1.name">Dr. Alisa Rahman</h3>
+              <p class="doctor-specialty" data-i18n="doctors.list.1.spec">Cardiologist Specialist</p>
               <img src="img/Social-Icons.svg" alt="Rating stars" class="doctor-rating" />
             </article>
-
             <article class="doctor-card">
               <img src="img/doctor3.png" alt="Dr. Anthony Fauci" class="doctor-photo" />
-              <h3 class="doctor-name">Dr. Anthony Fauci</h3>
-              <p class="doctor-specialty">Neurology Specilist</p>
+              <h3 class="doctor-name" data-i18n="doctors.list.2.name">Dr. Anthony Fauci</h3>
+              <p class="doctor-specialty" data-i18n="doctors.list.2.spec">Neurology Specialist</p>
               <img src="img/Social-Icons.svg" alt="Rating stars" class="doctor-rating" />
             </article>
-
             <article class="doctor-card">
               <img src="img/doctor4.png" alt="Dr. Khalid Abbed" class="doctor-photo" />
-              <h3 class="doctor-name">Dr. Khalid Abbed</h3>
-              <p class="doctor-specialty">Cancer Specilist</p>
+              <h3 class="doctor-name" data-i18n="doctors.list.3.name">Dr. Khalid Abbed</h3>
+              <p class="doctor-specialty" data-i18n="doctors.list.3.spec">Cancer Specialist</p>
               <img src="img/Social-Icons.svg" alt="Rating stars" class="doctor-rating" />
             </article>
           </div>
-
           <div class="explore-doctors-wrapper">
-            <button class="explore-doctors-button" type="button">
+            <button class="explore-doctors-button" type="button" data-i18n="doctors.explore">
               Explore All Doctors
             </button>
           </div>
         </section>
+
 
         <section class="mobile-app-section scroll-section" aria-labelledby="mobile-app-heading">
           <div class="mobile-app-container">
             <div class="mobile-app-image-wrapper">
               <img src="img/mobile_app.png" alt="Mobile app preview" class="mobile-app-image" />
             </div>
-
             <div class="mobile-app-content">
-              <h2 id="mobile-app-heading" class="mobile-app-title">
+              <h2 id="mobile-app-heading" class="mobile-app-title" data-i18n="mobile.title">
                 Mobile apps are available<br />Get HealthCare for free!<br />
               </h2>
-              <p class="mobile-app-description">
-                Get on-demand access to a doctor on your phone with the free
-                HealthCare mobile app. Download and register on our app for
-                free and feel safe for all your family
+              <p class="mobile-app-description" data-i18n="mobile.desc">
+                Get on-demand access to a doctor on your phone with the free HealthCare mobile app. Download and
+                register on our app for free and feel safe for all your family
               </p>
               <img src="img/download.svg" alt="Download app buttons" class="download-buttons" />
             </div>
           </div>
         </section>
 
+
         <section class="testimonials-section" aria-labelledby="testimonials-heading">
-          <h2 id="testimonials-heading" class="section-title">
+          <h2 id="testimonials-heading" class="section-title" data-i18n="testimonials.title">
             Look our Clients have to say about us
           </h2>
-
           <div class="testimonials-grid">
             <article class="testimonial-card">
               <div class="testimonial-content">
                 <img src="img/client1.png" alt="Alan Zara dilan" class="client-photo" />
-                <h3 class="client-name">Alan Zara dilan</h3>
-                <p class="client-location">New York, America, USA</p>
-                <blockquote class="testimonial-text">
+                <h3 class="client-name" data-i18n="testimonials.list.0.name">Alan Zara dilan</h3>
+                <p class="client-location" data-i18n="testimonials.list.0.loc">New York, America, USA</p>
+                <blockquote class="testimonial-text" data-i18n="testimonials.list.0.text">
                   Telehealth is fueled by digital technologies and DocTime
                   telemedicine app has brought a great revolution in medical
                   services specially an overpopulated country where virtual
@@ -371,13 +342,12 @@
                 </blockquote>
               </div>
             </article>
-
             <article class="testimonial-card">
               <div class="testimonial-content">
                 <img src="img/client2.png" alt="Alex Maxwell" class="client-photo" />
-                <h3 class="client-name">Alex Maxwell</h3>
-                <p class="client-location">San Francisco, USA</p>
-                <blockquote class="testimonial-text">
+                <h3 class="client-name" data-i18n="testimonials.list.1.name">Alex Maxwell</h3>
+                <p class="client-location" data-i18n="testimonials.list.1.loc">San Francisco, USA</p>
+                <blockquote class="testimonial-text" data-i18n="testimonials.list.1.text">
                   I visited my PCP for abdominal pain. My doctor told me that
                   I need to see Gastroenterologist. Earlier I used to call
                   multiple offices to schedule an appointment that suites my
@@ -385,13 +355,12 @@
                 </blockquote>
               </div>
             </article>
-
             <article class="testimonial-card">
               <div class="testimonial-content">
                 <img src="img/client3.png" alt="Alex Maxwell" class="client-photo" />
-                <h3 class="client-name">Dr. Tasnim zara</h3>
-                <p class="client-location">Los Angeles, USA</p>
-                <blockquote class="testimonial-text">
+                <h3 class="client-name" data-i18n="testimonials.list.2.name">Dr. Tasnim zara</h3>
+                <p class="client-location" data-i18n="testimonials.list.2.loc">Los Angeles, USA</p>
+                <blockquote class="testimonial-text" data-i18n="testimonials.list.2.text">
                   HealthCare is enlightens my superpower each and every
                   time...! I find DocTime a brand-able telemedicine platform
                   with virtual waiting room, video consultation,
@@ -402,6 +371,7 @@
             </article>
           </div>
         </section>
+
       </div>
     </main>
 
@@ -416,7 +386,15 @@
     </div>
 
     <section class="services">
-      <div style="position:relative;overflow:hidden;"><a href="https://yandex.by/maps/org/belorussko_rossiyskiy_universitet/1128267917/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Белорусско-Российский университет</a><a href="https://yandex.by/maps/158/mogilev/category/university/184106140/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">ВУЗ в Могилёве</a><a href="https://yandex.by/maps/158/mogilev/category/foreign_language_courses/184106160/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Курсы иностранных языков в Могилёве</a><iframe src="https://yandex.by/map-widget/v1/org/belorussko_rossiyskiy_universitet/1128267917/?indoorLevel=1&ll=30.344031%2C53.907949&z=17" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+      <div style="position:relative;overflow:hidden;"><a
+          href="https://yandex.by/maps/org/belorussko_rossiyskiy_universitet/1128267917/?utm_medium=mapframe&utm_source=maps"
+          style="color:#eee;font-size:12px;position:absolute;top:0px;">Белорусско-Российский университет</a><a
+          href="https://yandex.by/maps/158/mogilev/category/university/184106140/?utm_medium=mapframe&utm_source=maps"
+          style="color:#eee;font-size:12px;position:absolute;top:14px;">ВУЗ в Могилёве</a><a
+          href="https://yandex.by/maps/158/mogilev/category/foreign_language_courses/184106160/?utm_medium=mapframe&utm_source=maps"
+          style="color:#eee;font-size:12px;position:absolute;top:28px;">Курсы иностранных языков в Могилёве</a><iframe
+          src="https://yandex.by/map-widget/v1/org/belorussko_rossiyskiy_universitet/1128267917/?indoorLevel=1&ll=30.344031%2C53.907949&z=17"
+          width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
     </section>
 
     <div class="gallery-container">
@@ -431,19 +409,21 @@
           <button class="gallery-btn" id="gallery-next">→</button>
         </div>
         <div class="volume-block">
-          <label style="font-size:0.96em;color:#267;">Громкость: <input type="range" id="gallery-volume" min="0" max="1" step="0.01" value="0.6"></label>
-          <span id="audio-state" title="Воспроизведение" style="margin-left:14px;font-size:1.3em;vertical-align:middle;">🔊</span>
+          <label style="font-size:0.96em;color:#267;">Громкость: <input type="range" id="gallery-volume" min="0" max="1"
+              step="0.01" value="0.6"></label>
+          <span id="audio-state" title="Воспроизведение"
+            style="margin-left:14px;font-size:1.3em;vertical-align:middle;">🔊</span>
         </div>
       </div>
     </div>
-    
+
     <div id="modal-video-bg" class="modal-bg" style="display:none;">
       <div class="modal-window" style="padding:0;max-width:720px;">
         <button class="modal-close" id="modal-video-close" aria-label="Закрыть">&times;</button>
         <video id="gallery-video" controls style="width:100%;max-height:68vh;" poster="img/gallery7.jpg"></video>
       </div>
     </div>
-    
+
 
     <footer class="footer-section">
       <div class="footer-container">
@@ -451,51 +431,44 @@
           <div class="footer-brand">
             <h2 class="footer-logo">HEALTCARE</h2>
             <address class="footer-address">
-              <p>Metairie, 3689 Bassel Street, LA, Louisiana</p>
-              <p>Contact us: 225-788-5489</p>
+              <p data-i18n="footer.address.line1">Metairie, 3689 Bassel Street, LA, Louisiana</p>
+              <p data-i18n="footer.address.line2">Contact us: 225-788-5489</p>
             </address>
           </div>
-
           <div class="footer-links">
             <div class="footer-columns">
               <div class="footer-column">
-                <h3 class="footer-column-title">Category</h3>
+                <h3 class="footer-column-title" data-i18n="footer.category">Category</h3>
                 <ul class="footer-list">
-                  <li><a href="#home" class="footer-link">Home</a></li>
-                  <li><a href="#about" class="footer-link">About</a></li>
-                  <li>
-                    <a href="#services" class="footer-link">Services</a>
-                  </li>
-                  <li><a href="#reviews" class="footer-link">Reviews</a></li>
+                  <li><a href="#home" class="footer-link" data-i18n="footer.links.home">Home</a></li>
+                  <li><a href="#about" class="footer-link" data-i18n="footer.links.about">About</a></li>
+                  <li><a href="#services" class="footer-link" data-i18n="footer.links.services">Services</a></li>
+                  <li><a href="#reviews" class="footer-link" data-i18n="footer.links.reviews">Reviews</a></li>
                 </ul>
               </div>
-
               <div class="footer-column">
-                <h3 class="footer-column-title">About</h3>
+                <h3 class="footer-column-title" data-i18n="footer.about.header">About</h3>
                 <ul class="footer-list">
-                  <li>
-                    <a href="#partners" class="footer-link">Partners</a>
-                  </li>
-                  <li><a href="#careers" class="footer-link">Careers</a></li>
-                  <li><a href="#press" class="footer-link">Press</a></li>
-                  <li>
-                    <a href="#community" class="footer-link">Community</a>
-                  </li>
+                  <li><a href="#partners" class="footer-link" data-i18n="footer.about.partners">Partners</a></li>
+                  <li><a href="#careers" class="footer-link" data-i18n="footer.about.careers">Careers</a></li>
+                  <li><a href="#press" class="footer-link" data-i18n="footer.about.press">Press</a></li>
+                  <li><a href="#community" class="footer-link" data-i18n="footer.about.community">Community</a></li>
                 </ul>
               </div>
-
               <div class="footer-column newsletter-column">
-                <h3 class="footer-column-title">Subscribe newsletter</h3>
-                <p class="newsletter-description">
+                <h3 class="footer-column-title" data-i18n="footer.newsletter.title">Subscribe newsletter</h3>
+                <p class="newsletter-description" data-i18n="footer.newsletter.desc">
                   Sign up for tips, new destinations, and exclusive promos.
                 </p>
                 <form class="newsletter-form" role="form" aria-label="Newsletter subscription">
                   <div class="email-input-wrapper">
-                    <label for="email-input" class="visually-hidden">Email address</label>
-                    <input type="email" id="email-input" class="email-input" placeholder="Enter your email" required />
+                    <label for="email-input" class="visually-hidden" data-i18n="footer.newsletter.label">Email
+                      address</label>
+                    <input type="email" id="email-input" class="email-input" data-i18n="footer.newsletter.placeholder"
+                      placeholder="Enter your email" required />
                   </div>
-                  <button type="submit" class="subscribe-button">
-                    Subcribe
+                  <button type="submit" class="subscribe-button" data-i18n="footer.newsletter.btn">
+                    Subscribe
                   </button>
                 </form>
               </div>
@@ -503,39 +476,61 @@
           </div>
         </div>
       </div>
-
       <div class="footer-divider"></div>
-
       <div class="footer-bottom">
-        <p class="copyright">© 2021 Healthcare - All rights reserved.</p>
+        <p class="copyright" data-i18n="footer.copyright">
+          © 2021 Healthcare - All rights reserved.
+        </p>
         <nav class="footer-legal-nav" role="navigation" aria-label="Legal navigation">
           <ul class="legal-links">
-            <li><a href="#privacy" class="legal-link">Privacy</a></li>
-            <li><a href="#security" class="legal-link">Security</a></li>
-            <li><a href="#terms" class="legal-link">Terms</a></li>
+            <li><a href="#privacy" class="legal-link" data-i18n="footer.legal.privacy">Privacy</a></li>
+            <li><a href="#security" class="legal-link" data-i18n="footer.legal.security">Security</a></li>
+            <li><a href="#terms" class="legal-link" data-i18n="footer.legal.terms">Terms</a></li>
           </ul>
         </nav>
       </div>
     </footer>
+
   </div>
-  
+
+  <script src="js/lang.js"></script>
+  <script src="js/i81n.js"></script>
   <script src="js/preloader.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/burger.js"></script>
   <script src="js/galery.js"></script>
   <script>
     function onScrollAnimateSections() {
-  document.querySelectorAll('.scroll-section').forEach(section => {
-    const rect = section.getBoundingClientRect();
-    if (rect.top < window.innerHeight - 80) {
-      section.classList.add('visible');
+      document.querySelectorAll('.scroll-section').forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 80) {
+          section.classList.add('visible');
+        }
+      });
     }
-  });
-}
-window.addEventListener('scroll', onScrollAnimateSections);
-window.addEventListener('DOMContentLoaded', onScrollAnimateSections);
-
+    window.addEventListener('scroll', onScrollAnimateSections);
+    window.addEventListener('DOMContentLoaded', onScrollAnimateSections);
   </script>
+  <script>
+    // Показывать/скрывать кнопку выхода по наличию пользователя
+    function updateLogoutBtn() {
+      const btn = document.getElementById('logout-btn');
+      const user = localStorage.getItem('currentUser');
+      btn.style.display = user ? '' : 'none';
+    }
+    updateLogoutBtn();
+
+    // Поведение кнопки
+    document.getElementById('logout-btn').onclick = function () {
+      localStorage.removeItem('currentUser');
+      // Можно сбросить и другие пользовательские данные:
+      // localStorage.removeItem('cart-'+userId); и пр.
+
+      // Рекомендуется обновить страницу или UI
+      location.reload();
+    };
+  </script>
+  <script src="js/theme.js"></script>
 </body>
 
 </html>

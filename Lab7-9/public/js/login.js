@@ -14,7 +14,6 @@ function isLoginValid(val) {
     /^[a-z0-9._%+-]+@[a-z0-9-]+\.[a-z]{2,}$/i.test(val.trim())
   );
 }
-
 function isPasswordValid(val) {
   return val && val.length >= 8;
 }
@@ -22,7 +21,7 @@ function isPasswordValid(val) {
 function validateLoginForm() {
   let valid = true;
   if (!isLoginValid(loginInput.value)) {
-    loginError.textContent = "Введи корректный email или телефон РБ";
+    loginError.textContent = "Введите корректный email или телефон РБ";
     valid = false;
   } else {
     loginError.textContent = "";
@@ -40,13 +39,14 @@ function validateLoginForm() {
 loginInput.addEventListener('input', validateLoginForm);
 passwordInput.addEventListener('input', validateLoginForm);
 
-document.getElementById('loginForm').onsubmit = function (e) {
+document.getElementById('loginForm').onsubmit = function(e) {
   e.preventDefault();
   if (!validateLoginForm()) return;
 
   const val = loginInput.value.trim();
   const pw = passwordInput.value;
 
+  // Проверка email, потом phone
   fetch(`${USERS_URL}?email=${encodeURIComponent(val)}`)
     .then(res => res.json())
     .then(usersByEmail => {
@@ -69,7 +69,10 @@ document.getElementById('loginForm').onsubmit = function (e) {
       loginError.textContent = "";
       passwordError.textContent = "";
 
-      sessionStorage.setItem('currentUser', JSON.stringify(user));
+      // Сохраняем в localStorage вместо sessionStorage!
+      localStorage.setItem('currentUser', JSON.stringify(user));
       loginSuccess.textContent = "Вход выполнен успешно!";
+      // Можно добавить перенаправление в личный кабинет/на главную
+      // setTimeout(() => window.location.href = "index.html", 1500);
     });
 };

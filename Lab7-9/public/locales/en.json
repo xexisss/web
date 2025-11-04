@@ -1,0 +1,136 @@
+{
+    "header": {
+        "login": "Login",
+        "doctors": "Doctors",
+        "feedback": "Feedback",
+        "services": "Services",
+        "get-started": "Get Started",
+        "logout": "Logout"
+    },
+    "hero": {
+        "title": "Find And Search Your Suitable Doctor’s",
+        "subtitle": "Just care and cure yourself and your family with health care’s best doctors anytime.",
+        "find-doctor": "Find your doctor",
+        "location": "New York, USA"
+    },
+    "steps": {
+        "title": "3 Easy Steps and Get Your Solution",
+        "find": {
+            "title": "Find best doctor's",
+            "desc": "Find your doctor easily with a minimum of effort. We've kept everything organised for you."
+        },
+        "appointment": {
+            "title": "Get Appointment",
+            "desc": "Ask for an appointment of the doctor quickly with almost a single click. We take care of the rest."
+        },
+        "consult": {
+            "title": "Happy Consultations",
+            "desc": "Do consultations and take the service based on your appointment. Get back to good health"
+        }
+    },
+    "quality": {
+        "title": "Best quality service with our experience doctors",
+        "desc": "With our top doctors, we are able to provide best medical services above average. We have highly experienced doctors, so don't worry. They are also very talented in their fields",
+        "feature1": "Search your specialist & Online consultations anywhere",
+        "feature2": "Consultation our top specialists",
+        "feature3": "Doctors are available 24/7",
+        "explore": "Explore specialists"
+    },
+    "services": {
+        "title": "Our Service",
+        "desc": "Our doctors have high qualified skills and are guaranteed to help you recover from your disease.",
+        "cardiology": {
+            "title": "Cardiology",
+            "desc1": "Our cardiologists are skilled at the diagnosing and treating diseases",
+            "desc2": "of the cardiovascular system."
+        },
+        "pulmonology": {
+            "title": "Pulmonology",
+            "desc": "Our Pulmonologist are skilled at diagnosing treating diseases of the Pulmonology system."
+        },
+        "medicine": {
+            "title": "Medicine",
+            "desc": "Our medicine doctor are skilled at diagnosing treating diseases of the latest medicine system."
+        }
+    },
+    "doctors": {
+        "title": "Meet Our Certified Online Doctors",
+        "desc": "Our online doctors have an average of 15 years experience and a 98% satisfaction rating, they really set us apart!",
+        "list": [{
+                "name": "Dr Amanda Linda",
+                "spec": "Dentist Specialist"
+            },
+            {
+                "name": "Dr. Alisa Rahman",
+                "spec": "Cardiologist Specialist"
+            },
+            {
+                "name": "Dr. Anthony Fauci",
+                "spec": "Neurology Specialist"
+            },
+            {
+                "name": "Dr. Khalid Abbed",
+                "spec": "Cancer Specialist"
+            }
+        ],
+        "explore": "Explore All Doctors"
+    },
+    "mobile": {
+        "title": "Mobile apps are available Get HealthCare for free!",
+        "desc": "Get on-demand access to a doctor on your phone with the free HealthCare mobile app. Download and register on our app for free and feel safe for all your family"
+    },
+    "testimonials": {
+        "title": "Look our Clients have to say about us",
+        "list": [
+          {
+            "name": "Alan Zara dilan",
+            "loc": "New York, America, USA",
+            "text": "Telehealth is fueled by digital technologies and DocTime telemedicine app has brought a great revolution in medical services specially an overpopulated country where virtual chamber can create at anywhere thoughout country"
+          },
+          {
+            "name": "Alex Maxwell",
+            "loc": "San Francisco, USA",
+            "text": "I visited my PCP for abdominal pain. My doctor told me that I need to see Gastroenterologist. Earlier I used to call multiple offices to schedule an appointment that suites my time."
+          },
+          {
+            "name": "Dr. Tasnim zara",
+            "loc": "Los Angeles, USA",
+            "text": "HealthCare is enlightens my superpower each and every time...! I find DocTime a brand-able telemedicine platform with virtual waiting room, video consultation, e-prescription, beautifully planned user interface. Thank you :)"
+          }
+        ]
+    },
+    "footer": {
+        "address": {
+          "line1": "Metairie, 3689 Bassel Street, LA, Louisiana",
+          "line2": "Contact us: 225-788-5489"
+        },
+        "category": "Category",
+        "links": {
+          "home": "Home",
+          "about": "About",
+          "services": "Services",
+          "reviews": "Reviews"
+        },
+        "about": {
+          "header": "About",
+          "partners": "Partners",
+          "careers": "Careers",
+          "press": "Press",
+          "community": "Community"
+        },
+        "newsletter": {
+          "title": "Subscribe newsletter",
+          "desc": "Sign up for tips, new destinations, and exclusive promos.",
+          "label": "Email address",
+          "placeholder": "Enter your email",
+          "btn": "Subscribe"
+        },
+        "copyright":
+          "© 2021 Healthcare - All rights reserved.",
+        "legal": {
+          "privacy": "Privacy",
+          "security": "Security",
+          "terms": "Terms"
+        }
+      }
+}

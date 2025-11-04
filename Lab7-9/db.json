@@ -167,20 +167,7 @@
     }
   ],
   "favorites": [],
-  "cart": [
-    {
-      "id": "1",
-      "name": "Терапевт",
-      "description": "Общая диагностика и лечение заболеваний.",
-      "image": "img/therapist.jpg",
-      "location": "Москва",
-      "rating": 4.8,
-      "patients": 1200,
-      "price": 2500,
-      "category": "Взрослый врач",
-      "count": 1
-    }
-  ],
+  "cart": [],
   "users": [
     {
       "id": "1",
@@ -290,6 +277,20 @@
         }
       ],
       "total": 2000
+    },
+    {
+      "id": "3600",
+      "userId": 1,
+      "orderDate": "2025-11-04T08:38:49.036Z",
+      "items": [
+        {
+          "serviceId": "3",
+          "name": "Кардиолог",
+          "count": 1,
+          "price": 3500
+        }
+      ],
+      "total": 3500
     }
   ],
   "feedback": [

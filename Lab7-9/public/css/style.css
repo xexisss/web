@@ -2208,3 +2208,70 @@ input:focus {
   opacity: 1;
   transform: translateY(0);
 }
+
+.logout-btn {
+  color: #fff;
+  font-size: 1em;
+  border: none;
+  border-radius: 8px;
+  margin-left: 1.1em;
+  cursor: pointer;
+  transition: background .18s;
+}
+.logout-btn:hover {
+  background: #e13446;
+}
+
+.theme-toggle:hover { background: #346a9b; transform: scale(1.09);}
+body.dark-theme {
+  background: #171c2b;
+  color: #ebeffa;
+}
+body.dark-theme .card,
+body.dark-theme .scroll-section,
+body.dark-theme header,
+body.dark-theme .footer-section,
+body.dark-theme .nav-menu {
+  background: #212d43 !important;
+  color: #f1f6fe !important;
+}
+
+body.dark-theme .page-container {
+  background-color: #192134;
+}
+body.dark-theme .header-section {
+  background-color: rgba(32, 44, 69, 0.52);
+  color: #edf6fe;
+}
+body.dark-theme .header-container,
+body.dark-theme .main-content {
+  background-blend-mode: normal;
+  color: #f6fbff;
+}
+body.dark-theme .header-background,
+body.dark-theme .page-background {
+  filter: brightness(0.82);
+}
+
+body.dark-theme .header-content {
+  color: #e1f2fc;
+}
+
+body.dark-theme .step-description,
+.step-header,
+.section-title,
+.quality-description,
+.quality-title,
+.feature-text,
+.services-section,
+.services-section .text-wrapper,
+.services-section .div,
+.nav-link,
+.hero-text,
+.hero-text p,
+.doctors-description,
+.doctor-name,
+.mobile-app-title,
+.mobile-app-description {
+  color: #fff;
+}
