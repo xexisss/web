@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск фильмов</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Поиск фильмов</h1>
+        <p class="header-subtitle">Найдите свой следующий любимый фильм</p>
+    </header>
+
+    <main class="container">
+        <section class="search-section">
+            <div class="search-bar">
+                <input type="text" id="searchInput" class="search-input" placeholder="Поиск фильмов..."
+                    autocomplete="off" autofocus>
+                <button class="clear-btn" id="clearBtn" aria-label="Clear search">&times;</button>
+            </div>
+
+            <div class="filter-section">
+                <button class="filter-btn active" data-filter="title-asc">По названию (A-Z)</button>
+                <button class="filter-btn" data-filter="title-desc">По названию (Z-A)</button>
+                <button class="filter-btn" data-filter="rating-desc">По рейтингу ↓</button>
+                <button class="filter-btn" data-filter="rating-asc">По рейтингу ↑</button>
+                <button class="filter-btn" data-filter="year-desc">Сначала новые</button>
+                <button class="filter-btn" data-filter="year-asc">Сначала старые</button>
+            </div>
+        </section>
+
+        <div class="error-message" id="errorMessage"></div>
+
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+        </div>
+
+        <div class="message" id="message"></div>
+
+        <div class="movies-grid" id="moviesGrid"></div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
