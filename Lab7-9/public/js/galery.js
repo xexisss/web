@@ -1,4 +1,3 @@
-// --- 1. ГАЛЕРЕЯ — картинки, звуки, (одно видео) ---
 const gallery = [{
         img: 'img/doctor1.png',
         audio: 'audio/sound1.mp3',

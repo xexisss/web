@@ -213,6 +213,21 @@
       "nickname": "OlyJij660_sx",
       "password": "12345AbK3&",
       "agreementAccepted": true
+    },
+    {
+      "id": "2032",
+      "phone": "+375255555555",
+      "email": "dasdsa@dasd.dsa",
+      "birthdate": "2002-02-20",
+      "role": "покупатель",
+      "fio": {
+        "first": "Y",
+        "last": "X",
+        "middle": "Z"
+      },
+      "nickname": "YX723_doc",
+      "password": "#ZLj0wjb)!8d",
+      "agreementAccepted": true
     }
   ],
   "orders": [
