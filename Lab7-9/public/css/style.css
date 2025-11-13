@@ -542,7 +542,15 @@ body.menu-open {
 .steps-section {
   width: 100%;
   text-align: center;
+  position: relative;
+  will-change: transform;
 }
+
+.steps-section[data-parallax] {
+  transform: translateY(calc(var(--scroll, 0) * 0.05px));
+  transition: transform 0.2s cubic-bezier(.77,0,.18,1);
+}
+
 
 .section-title {
   color: rgba(62, 62, 62, 1);

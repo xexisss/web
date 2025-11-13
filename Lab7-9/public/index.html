@@ -120,7 +120,7 @@
       </header>
 
       <div class="content-wrapper">
-        <section class="steps-section" aria-labelledby="steps-heading">
+        <section class="steps-section" aria-labelledby="steps-heading" data-parallax>
           <h2 id="steps-heading" class="section-title" data-i18n="steps.title">
             3 Easy Steps and Get Your Solution
           </h2>
@@ -512,7 +512,6 @@
     window.addEventListener('DOMContentLoaded', onScrollAnimateSections);
   </script>
   <script>
-    // Показывать/скрывать кнопку выхода по наличию пользователя
     function updateLogoutBtn() {
       const btn = document.getElementById('logout-btn');
       const user = localStorage.getItem('currentUser');
@@ -520,17 +519,21 @@
     }
     updateLogoutBtn();
 
-    // Поведение кнопки
     document.getElementById('logout-btn').onclick = function () {
       localStorage.removeItem('currentUser');
-      // Можно сбросить и другие пользовательские данные:
-      // localStorage.removeItem('cart-'+userId); и пр.
-
-      // Рекомендуется обновить страницу или UI
       location.reload();
     };
   </script>
   <script src="js/theme.js"></script>
+  <script>
+  document.addEventListener('scroll', () => {
+    const el = document.querySelector('.steps-section[data-parallax]');
+    if(el){
+      const scroll = window.scrollY || window.pageYOffset;
+      el.style.setProperty('--scroll', scroll);
+    }
+  });
+  </script>
 </body>
 
 </html>
